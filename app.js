@@ -75,7 +75,7 @@ app.post("/failure",function(req,res){
 
 
 const portNum = 3009;
-app.listen(portNum,function(req,res)
+app.listen(process.env.PORT || portNum,function(req,res)
 {
-    console.log("Server is listening on port "+portNum+"");
+    console.log("Server is listening");
 })
